@@ -17,4 +17,5 @@ Route::get('/players/{id}', 'PlayerController@show');
 Route::get('/register', 'RegistrationController@showForm');
 Route::post('/register', 'RegistrationController@store');
 
-
+Route::get('/login', 'LoginController@create');
+Route::post('/login', 'LoginController@store');

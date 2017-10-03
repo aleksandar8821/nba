@@ -9,6 +9,7 @@ class TeamController extends Controller
 {
     public function index()
     {
+    	//dd(auth()->user());
     	$teams = Team::all();
     	return view('teams', compact('teams'));
     }
